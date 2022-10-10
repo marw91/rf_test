@@ -1,0 +1,14 @@
+version: '1'
+services:
+    test:
+        network_mode: host
+        image: robot
+        shm_size: "512M"
+        environment:
+            USERNAME: Mwiendels
+        volumes: [
+           "./suites:/suites",
+           "./scripts:/scripts",
+           "./reports:/reports",
+           "./keywords:/keywords"
+        ]

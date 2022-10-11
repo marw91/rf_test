@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.0a6 on linux)" generated="20221004 11:42:24.871" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.0a6 on linux)" generated="20221011 07:57:32.835" rpa="false" schemaversion="3">
 <suite id="s1" name="Suites" source="/suites">
 <suite id="s1-s1" name="Opdrachten" source="/suites/opdrachten.robot">
 <kw name="Start TestCase" library="common" type="SETUP">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20221004 11:42:25.420" endtime="20221004 11:42:25.421"/>
+<status status="PASS" starttime="20221011 07:57:34.012" endtime="20221011 07:57:34.013"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>http://adactinhotelapp.com/HotelAppBuild2/</arg>
@@ -15,47 +15,37 @@
 <arg>--disable-extensions</arg>
 <arg>--disable-dev-shm-usage</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221004 11:42:25.422" level="INFO">Opening browser 'chrome' to base url 'http://adactinhotelapp.com/HotelAppBuild2/' through remote server at '--no-sandbox'.</msg>
-<msg timestamp="20221004 11:42:25.422" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg timestamp="20221004 11:42:25.423" level="FAIL">ValueError: not enough values to unpack (expected 2, got 1)</msg>
-<status status="FAIL" starttime="20221004 11:42:25.421" endtime="20221004 11:42:25.424"/>
+<msg timestamp="20221011 07:57:34.015" level="INFO">Opening browser 'chrome' to base url 'http://adactinhotelapp.com/HotelAppBuild2/' through remote server at '--no-sandbox'.</msg>
+<msg timestamp="20221011 07:57:34.015" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221011 07:57:34.016" level="FAIL">ValueError: not enough values to unpack (expected 2, got 1)</msg>
+<status status="FAIL" starttime="20221011 07:57:34.013" endtime="20221011 07:57:34.030"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" starttime="20221004 11:42:25.425" endtime="20221004 11:42:25.425"/>
+<status status="NOT RUN" starttime="20221011 07:57:34.031" endtime="20221011 07:57:34.031"/>
 </kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.localStorage.clear();</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="NOT RUN" starttime="20221004 11:42:25.425" endtime="20221004 11:42:25.425"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.location.reload(true);</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="NOT RUN" starttime="20221004 11:42:25.426" endtime="20221004 11:42:25.426"/>
-</kw>
-<status status="FAIL" starttime="20221004 11:42:25.419" endtime="20221004 11:42:25.427"/>
+<status status="FAIL" starttime="20221011 07:57:34.012" endtime="20221011 07:57:34.032"/>
 </kw>
 <test id="s1-s1-t1" name="Login to website with correct username and Password and verify login was succesfull" line="15">
-<status status="FAIL" starttime="20221004 11:42:25.427" endtime="20221004 11:42:25.430">Parent suite setup failed:
+<status status="FAIL" starttime="20221011 07:57:34.032" endtime="20221011 07:57:34.036">Parent suite setup failed:
 ValueError: not enough values to unpack (expected 2, got 1)</status>
 </test>
 <test id="s1-s1-t2" name="Search for hotel" line="19">
-<status status="FAIL" starttime="20221004 11:42:25.431" endtime="20221004 11:42:25.434">Parent suite setup failed:
+<status status="FAIL" starttime="20221011 07:57:34.038" endtime="20221011 07:57:34.039">Parent suite setup failed:
 ValueError: not enough values to unpack (expected 2, got 1)</status>
 </test>
 <test id="s1-s1-t3" name="Select hotel and verify price" line="22">
-<status status="FAIL" starttime="20221004 11:42:25.436" endtime="20221004 11:42:25.442">Parent suite setup failed:
+<status status="FAIL" starttime="20221011 07:57:34.040" endtime="20221011 07:57:34.045">Parent suite setup failed:
 ValueError: not enough values to unpack (expected 2, got 1)</status>
 </test>
 <test id="s1-s1-t4" name="Navigate to next stage" line="28">
-<status status="FAIL" starttime="20221004 11:42:25.444" endtime="20221004 11:42:25.445">Parent suite setup failed:
+<status status="FAIL" starttime="20221011 07:57:34.052" endtime="20221011 07:57:34.054">Parent suite setup failed:
 ValueError: not enough values to unpack (expected 2, got 1)</status>
 </test>
-<status status="FAIL" starttime="20221004 11:42:24.909" endtime="20221004 11:42:25.447">Suite setup failed:
+<status status="FAIL" starttime="20221011 07:57:32.964" endtime="20221011 07:57:34.056">Suite setup failed:
 ValueError: not enough values to unpack (expected 2, got 1)</status>
 </suite>
-<status status="FAIL" starttime="20221004 11:42:24.876" endtime="20221004 11:42:25.460"/>
+<status status="FAIL" starttime="20221011 07:57:32.838" endtime="20221011 07:57:34.060"/>
 </suite>
 <statistics>
 <total>

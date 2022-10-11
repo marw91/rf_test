@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -f ./Dockerfile -t robot .'
+                bat 'docker build -f ./Dockerfile -t robot .'
             }
         }
         stage('Test') {
             steps {
-                sh 'docker compose up'
+                bat 'docker compose up'
             }
         }
     }

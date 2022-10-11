@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'docker compose up -f ./docker-compose.yml'
+                bat 'docker compose up'
             }
         }
     }

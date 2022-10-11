@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 set -e
 
 # Run an individual test suite if the TEST_SUITE environmental variable is set.

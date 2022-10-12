@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 set -e
 
 # Run an individual test suite if the TEST_SUITE environmental variable is set.
@@ -7,7 +7,7 @@ if [ -z "$TEST_SUITE" ]; then
 fi
 
 CMD="robot --console verbose --outputdir /reports /suites/$TEST_SUITE"
-pwd && ls -la
+
 echo ${CMD}
 
 ``${CMD}``

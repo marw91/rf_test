@@ -26,10 +26,12 @@ RUN python3 -m pip install robotframework && pip install robotframework-requests
 RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
     && dpkg -i google-chrome*.deb \
     && rm google-chrome*.deb \
-    && wget -q https://chromedriver.storage.googleapis.com/107.0.5304.18/chromedriver_linux64.zip \
+    && wget -q https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip \
     && unzip chromedriver_linux64.zip \
     && rm chromedriver_linux64.zip \
     && mv chromedriver /usr/local/bin \
     && chmod +x /usr/local/bin/chromedriver 
-    
+
+RUN whereis google-chrome
+
 CMD ["/scripts/run_suite.sh"]

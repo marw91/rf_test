@@ -4,7 +4,8 @@ Library         SeleniumLibrary
 *** Keywords ***
 Start TestCase
 	Close All Browsers
-    open browser            http://adactinhotelapp.com/HotelAppBuild2/  headlesschrome   --disable-gpu  --no-sandbox  --disable-extensions  --disable-dev-shm-usage
+    open browser            http://adactinhotelapp.com/HotelAppBuild2/  headlesschrome   
+	## --disable-gpu  --no-sandbox  --disable-extensions  --disable-dev-shm-usage
     maximize browser window
 Select from dropdown
     [Arguments]    ${name}    ${option}

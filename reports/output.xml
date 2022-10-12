@@ -1,51 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.0a6 on linux)" generated="20221012 07:24:12.709" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.0a6 on linux)" generated="20221012 08:09:05.079" rpa="false" schemaversion="3">
 <suite id="s1" name="Suites" source="/suites">
 <suite id="s1-s1" name="Opdrachten" source="/suites/opdrachten.robot">
 <kw name="Start TestCase" library="common" type="SETUP">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20221012 07:24:14.492" endtime="20221012 07:24:14.493"/>
+<status status="PASS" starttime="20221012 08:09:05.621" endtime="20221012 08:09:05.621"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>http://adactinhotelapp.com/HotelAppBuild2/</arg>
 <arg>headlesschrome</arg>
-<arg>--disable-gpu</arg>
-<arg>--no-sandbox</arg>
-<arg>--disable-extensions</arg>
-<arg>--disable-dev-shm-usage</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221012 07:24:14.496" level="INFO">Opening browser 'headlesschrome' to base url 'http://adactinhotelapp.com/HotelAppBuild2/' through remote server at '--no-sandbox'.</msg>
-<msg timestamp="20221012 07:24:14.496" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg timestamp="20221012 07:24:14.498" level="FAIL">ValueError: not enough values to unpack (expected 2, got 1)</msg>
-<status status="FAIL" starttime="20221012 07:24:14.493" endtime="20221012 07:24:14.504"/>
+<msg timestamp="20221012 08:09:05.622" level="INFO">Opening browser 'headlesschrome' to base url 'http://adactinhotelapp.com/HotelAppBuild2/'.</msg>
+<msg timestamp="20221012 08:09:06.264" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221012 08:09:06.265" level="FAIL">WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x560af8a522c3 &lt;unknown&gt;
+#1 0x560af885b83a &lt;unknown&gt;
+#2 0x560af8881543 &lt;unknown&gt;
+#3 0x560af887c546 &lt;unknown&gt;
+#4 0x560af88bade6 &lt;unknown&gt;
+#5 0x560af88ba74f &lt;unknown&gt;
+#6 0x560af88b2d63 &lt;unknown&gt;
+#7 0x560af88877e3 &lt;unknown&gt;
+#8 0x560af8888a21 &lt;unknown&gt;
+#9 0x560af8aa018e &lt;unknown&gt;
+#10 0x560af8aa3622 &lt;unknown&gt;
+#11 0x560af8a86aae &lt;unknown&gt;
+#12 0x560af8aa42a3 &lt;unknown&gt;
+#13 0x560af8a7aecf &lt;unknown&gt;
+#14 0x560af8ac4588 &lt;unknown&gt;
+#15 0x560af8ac4706 &lt;unknown&gt;
+#16 0x560af8ade8b2 &lt;unknown&gt;
+#17 0x7ff2e3208fa3 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20221012 08:09:05.622" endtime="20221012 08:09:06.266"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" starttime="20221012 07:24:14.504" endtime="20221012 07:24:14.504"/>
+<status status="NOT RUN" starttime="20221012 08:09:06.267" endtime="20221012 08:09:06.267"/>
 </kw>
-<status status="FAIL" starttime="20221012 07:24:14.491" endtime="20221012 07:24:14.505"/>
+<status status="FAIL" starttime="20221012 08:09:05.621" endtime="20221012 08:09:06.268"/>
 </kw>
 <test id="s1-s1-t1" name="Login to website with correct username and Password and verify login was succesfull" line="15">
-<status status="FAIL" starttime="20221012 07:24:14.506" endtime="20221012 07:24:14.509">Parent suite setup failed:
-ValueError: not enough values to unpack (expected 2, got 1)</status>
+<status status="FAIL" starttime="20221012 08:09:06.268" endtime="20221012 08:09:06.270">Parent suite setup failed:
+WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x560af8a522c3 &lt;unknown&gt;
+#1 0x560af885b83a &lt;unknown&gt;
+#2 0x560af8881543 &lt;unknown&gt;
+#3 0x560af887c546 &lt;unknown&gt;
+#4 0x560af88bade6 &lt;unknown&gt;
+#5 0x560af88ba74f &lt;unknown&gt;
+#6 0x560af88b2d63 &lt;unknown&gt;
+#7 0x560af88877e3 &lt;unknown&gt;
+#8 0x560af8888a21 &lt;unknown&gt;
+#9 0x560af8aa018e &lt;unknown&gt;
+#10 0x560af8aa3622 &lt;unknown&gt;
+#11 0x560af8a86aae &lt;unknown&gt;
+#12 0x560af8aa42a3 &lt;unknown&gt;
+#13 0x560af8a7aecf &lt;unknown&gt;
+#14 0x560af8ac4588 &lt;unknown&gt;
+#15 0x560af8ac4706 &lt;unknown&gt;
+#16 0x560af8ade8b2 &lt;unknown&gt;
+#17 0x7ff2e3208fa3 &lt;unknown&gt;
+</status>
 </test>
 <test id="s1-s1-t2" name="Search for hotel" line="19">
-<status status="FAIL" starttime="20221012 07:24:14.510" endtime="20221012 07:24:14.512">Parent suite setup failed:
-ValueError: not enough values to unpack (expected 2, got 1)</status>
+<status status="FAIL" starttime="20221012 08:09:06.271" endtime="20221012 08:09:06.273">Parent suite setup failed:
+WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x560af8a522c3 &lt;unknown&gt;
+#1 0x560af885b83a &lt;unknown&gt;
+#2 0x560af8881543 &lt;unknown&gt;
+#3 0x560af887c546 &lt;unknown&gt;
+#4 0x560af88bade6 &lt;unknown&gt;
+#5 0x560af88ba74f &lt;unknown&gt;
+#6 0x560af88b2d63 &lt;unknown&gt;
+#7 0x560af88877e3 &lt;unknown&gt;
+#8 0x560af8888a21 &lt;unknown&gt;
+#9 0x560af8aa018e &lt;unknown&gt;
+#10 0x560af8aa3622 &lt;unknown&gt;
+#11 0x560af8a86aae &lt;unknown&gt;
+#12 0x560af8aa42a3 &lt;unknown&gt;
+#13 0x560af8a7aecf &lt;unknown&gt;
+#14 0x560af8ac4588 &lt;unknown&gt;
+#15 0x560af8ac4706 &lt;unknown&gt;
+#16 0x560af8ade8b2 &lt;unknown&gt;
+#17 0x7ff2e3208fa3 &lt;unknown&gt;
+</status>
 </test>
 <test id="s1-s1-t3" name="Select hotel and verify price" line="22">
-<status status="FAIL" starttime="20221012 07:24:14.522" endtime="20221012 07:24:14.524">Parent suite setup failed:
-ValueError: not enough values to unpack (expected 2, got 1)</status>
+<status status="FAIL" starttime="20221012 08:09:06.274" endtime="20221012 08:09:06.276">Parent suite setup failed:
+WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x560af8a522c3 &lt;unknown&gt;
+#1 0x560af885b83a &lt;unknown&gt;
+#2 0x560af8881543 &lt;unknown&gt;
+#3 0x560af887c546 &lt;unknown&gt;
+#4 0x560af88bade6 &lt;unknown&gt;
+#5 0x560af88ba74f &lt;unknown&gt;
+#6 0x560af88b2d63 &lt;unknown&gt;
+#7 0x560af88877e3 &lt;unknown&gt;
+#8 0x560af8888a21 &lt;unknown&gt;
+#9 0x560af8aa018e &lt;unknown&gt;
+#10 0x560af8aa3622 &lt;unknown&gt;
+#11 0x560af8a86aae &lt;unknown&gt;
+#12 0x560af8aa42a3 &lt;unknown&gt;
+#13 0x560af8a7aecf &lt;unknown&gt;
+#14 0x560af8ac4588 &lt;unknown&gt;
+#15 0x560af8ac4706 &lt;unknown&gt;
+#16 0x560af8ade8b2 &lt;unknown&gt;
+#17 0x7ff2e3208fa3 &lt;unknown&gt;
+</status>
 </test>
 <test id="s1-s1-t4" name="Navigate to next stage" line="28">
-<status status="FAIL" starttime="20221012 07:24:14.525" endtime="20221012 07:24:14.527">Parent suite setup failed:
-ValueError: not enough values to unpack (expected 2, got 1)</status>
+<status status="FAIL" starttime="20221012 08:09:06.277" endtime="20221012 08:09:06.278">Parent suite setup failed:
+WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x560af8a522c3 &lt;unknown&gt;
+#1 0x560af885b83a &lt;unknown&gt;
+#2 0x560af8881543 &lt;unknown&gt;
+#3 0x560af887c546 &lt;unknown&gt;
+#4 0x560af88bade6 &lt;unknown&gt;
+#5 0x560af88ba74f &lt;unknown&gt;
+#6 0x560af88b2d63 &lt;unknown&gt;
+#7 0x560af88877e3 &lt;unknown&gt;
+#8 0x560af8888a21 &lt;unknown&gt;
+#9 0x560af8aa018e &lt;unknown&gt;
+#10 0x560af8aa3622 &lt;unknown&gt;
+#11 0x560af8a86aae &lt;unknown&gt;
+#12 0x560af8aa42a3 &lt;unknown&gt;
+#13 0x560af8a7aecf &lt;unknown&gt;
+#14 0x560af8ac4588 &lt;unknown&gt;
+#15 0x560af8ac4706 &lt;unknown&gt;
+#16 0x560af8ade8b2 &lt;unknown&gt;
+#17 0x7ff2e3208fa3 &lt;unknown&gt;
+</status>
 </test>
-<status status="FAIL" starttime="20221012 07:24:12.764" endtime="20221012 07:24:14.529">Suite setup failed:
-ValueError: not enough values to unpack (expected 2, got 1)</status>
+<status status="FAIL" starttime="20221012 08:09:05.129" endtime="20221012 08:09:06.279">Suite setup failed:
+WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x560af8a522c3 &lt;unknown&gt;
+#1 0x560af885b83a &lt;unknown&gt;
+#2 0x560af8881543 &lt;unknown&gt;
+#3 0x560af887c546 &lt;unknown&gt;
+#4 0x560af88bade6 &lt;unknown&gt;
+#5 0x560af88ba74f &lt;unknown&gt;
+#6 0x560af88b2d63 &lt;unknown&gt;
+#7 0x560af88877e3 &lt;unknown&gt;
+#8 0x560af8888a21 &lt;unknown&gt;
+#9 0x560af8aa018e &lt;unknown&gt;
+#10 0x560af8aa3622 &lt;unknown&gt;
+#11 0x560af8a86aae &lt;unknown&gt;
+#12 0x560af8aa42a3 &lt;unknown&gt;
+#13 0x560af8a7aecf &lt;unknown&gt;
+#14 0x560af8ac4588 &lt;unknown&gt;
+#15 0x560af8ac4706 &lt;unknown&gt;
+#16 0x560af8ade8b2 &lt;unknown&gt;
+#17 0x7ff2e3208fa3 &lt;unknown&gt;
+</status>
 </suite>
-<status status="FAIL" starttime="20221012 07:24:12.714" endtime="20221012 07:24:14.533"/>
+<status status="FAIL" starttime="20221012 08:09:05.083" endtime="20221012 08:09:06.282"/>
 </suite>
 <statistics>
 <total>

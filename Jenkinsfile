@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Verify test succeeded') {
             steps {
-                bat "robot outputPath: '/reports', logFileName: 'log.html', outputFileName: 'output.xml', reportFileName: 'report.hml', passThreshold: 100, unstableThreshold: 75.0'"
+                sh "robot outputPath: '/reports', logFileName: 'log.html', outputFileName: 'output.xml', reportFileName: 'report.hml', passThreshold: 100, unstableThreshold: 75.0'"
             }
         }
     }

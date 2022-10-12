@@ -7,7 +7,7 @@ if [ -z "$TEST_SUITE" ]; then
 fi
 
 CMD="robot --console verbose --outputdir /reports /suites/$TEST_SUITE"
-
+pwd && ls -la
 echo ${CMD}
 
 ``${CMD}``

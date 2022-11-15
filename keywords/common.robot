@@ -1,13 +1,19 @@
 *** Settings ***
 Library         SeleniumLibrary
 
+*** Variables ***
+${CHROMEDRIVER_PATH}        /usr/local/bin/chromedriver
+${URL}                      http://adactinhotelapp.com/HotelAppBuild2/
+
 *** Keywords ***
 Start TestCase
 	Close All Browsers
-    open browser            http://adactinhotelapp.com/HotelAppBuild2/  headlesschrome   
-	## --disable-gpu  --no-sandbox  --disable-extensions  --disable-dev-shm-usage
+	 ${chrome_options}=  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
+    Call Method    ${chrome_options}    add_argument    --no-sandbox
+    Call Method    ${chrome_options}    add_argument    --headless
+    Open Browser    ${URl}    chrome    options=${chrome_options}      executable_path=${CHROMEDRIVER_PATH}
     maximize browser window
-Select from dropdown
+Select from dropdow
     [Arguments]    ${name}    ${option}
 	Click Element    xpath://select[@name=${name}]//option[@value=${option}]
 

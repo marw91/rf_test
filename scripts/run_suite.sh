@@ -10,4 +10,5 @@ CMD="robot --console verbose --outputdir /reports /suites/$TEST_SUITE"
 pwd && ls -la
 echo ${CMD}
 
+
 ``${CMD}``
